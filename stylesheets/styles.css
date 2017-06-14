@@ -65,3 +65,38 @@ nav {
 .three {
   
 }
+
+.banner {
+  height: 247px;
+  background: url("../images/banner.png")
+}
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 15px;
+}
+
+.menu-items li {
+  padding: 15px 3px 5px 3px;
+    border-bottom: 4px solid #000;
+    overflow: hidden;
+}
+
+h6, .price {
+  margin: 5px 0;
+  font-family: 'Gloria Hallelujah', cursive, arial, sans-serif;
+  font-size: 14px;
+}
+
+.description {
+  float: left;
+  font-family: serif;
+  font-style: italic;
+}
+
+.price {
+  width: 50px;
+  float: right;
+  text-align: right;
+}
