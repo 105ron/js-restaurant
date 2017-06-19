@@ -42,22 +42,15 @@ nav {
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
   padding: 8px 0;
+  cursor: pointer;
 }
 
 .tab + .tab {
   margin: 0 0 0 20px;
 }
 
-.one {
+.active-tab {
   background-color: #80766d;
-}
-
-.two {
- 
-}
-
-.three {
-  
 }
 
 .banner {
