@@ -60,12 +60,8 @@
             <input type="submit" class="submit" value="Submit">\
           </form>';
   function changePage(newPage, button) {
-    console.log(newPage)
     let wrapper= document.createElement('div');
     wrapper.innerHTML = newPage;
-    console.log("first wrapper" + wrapper);
-    //wrapper = wrapper.firstChild; //to remove the outer div tags
-    console.log("second wrapper " + wrapper);
     mainContainer.innerHTML = ''; //Clear container
     mainContainer.appendChild(wrapper);
     //reset the button classes and change the colour of the clicked tab
