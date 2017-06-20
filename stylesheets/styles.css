@@ -16,15 +16,26 @@ header {
   background: #4a3c31;
 }
 
+#content {
+  text-align: center;
+}
+
 h1, h3 {
   font-family: 'Gloria Hallelujah', cursive, arial, sans-serif;
-  color: #fff;
   margin: 0;
   text-align: center;
 }
 
+.white {
+  color: #fff;
+}
+
 h3 {
   margin-bottom: 30px;
+}
+
+.tab-heading {
+  margin: 15px auto;
 }
 
 nav {
@@ -92,4 +103,57 @@ h6, .price {
   width: 50px;
   float: right;
   text-align: right;
+}
+
+p {
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+.bottom-margin {
+  margin-bottom: 360px;
+}
+
+.form-container {
+  padding: 0 100px 200px 100px;
+  text-align: right;
+}
+
+.contact-bar {
+  background-color: #c6c6c6;
+  font: sans-serif;
+  color: #fff;
+  text-align: centre;
+  padding: 5px 0;
+  margin: 0 5px 35px 5px
+}
+
+label {
+  display: inline-block;
+  width: 125px;
+  color: #c6c6c6;
+  padding-right: 30px;
+  margin-bottom: 35px;
+}
+
+input {
+  width: 500px;
+  float: right;
+}
+
+.message {
+  height: 107.5px;
+}
+
+.message-label {
+  margin-bottom: 127px;
+}
+
+.mandatory {
+  color: red;
+}
+
+.submit {
+  width: 75px;
+  margin-right: 433px;
 }
