@@ -1,9 +1,9 @@
 (function (window, document, undefined) {  
-  "use strict";
-  const mainContainer = document.getElementById("content");
-  const home = document.getElementById("home");
-  const about = document.getElementById("about");
-  const contact = document.getElementById("contact");
+  'use strict';
+  const mainContainer = document.getElementById('content');
+  const home = document.getElementById('home');
+  const about = document.getElementById('about');
+  const contact = document.getElementById('contact');
   const buttons = [home, about, contact];
   const homePage = '<ul class="menu-items">\
             <div class="banner"></div>\
@@ -60,18 +60,16 @@
             <input type="submit" class="submit" value="Submit">\
           </form>';
   function changePage(newPage, button) {
-    let wrapper= document.createElement('div');
-    wrapper.innerHTML = newPage;
     mainContainer.innerHTML = ''; //Clear container
-    mainContainer.appendChild(wrapper);
+    mainContainer.insertAdjacentHTML('afterbegin', newPage);
     //reset the button classes and change the colour of the clicked tab
-    buttons.forEach(x => {x.className = "tab"});
-    button.className += " active-tab";
+    buttons.forEach(x => {x.className = 'tab'});
+    button.className += ' active-tab';
   }
 
-  home.addEventListener("mouseup", function(){changePage(homePage, home)}, false);
-  about.addEventListener("mouseup", function(){changePage(aboutPage, about)}, false)
-  contact.addEventListener("mouseup", function(){changePage(contactPage, contact)}, false)
+  home.addEventListener('mouseup', function(){changePage(homePage, home)}, false);
+  about.addEventListener('mouseup', function(){changePage(aboutPage, about)}, false)
+  contact.addEventListener('mouseup', function(){changePage(contactPage, contact)}, false)
 
   changePage(homePage, home); 
 
